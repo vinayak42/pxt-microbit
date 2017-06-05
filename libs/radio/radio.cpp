@@ -395,4 +395,17 @@ namespace radio {
         if (radioEnable() != MICROBIT_OK) return 0;
         return time;
     }
+
+    /**
+    * Associates the given event with the radio channel.
+    */
+    //% advanced=true
+    //% weight=10 blockId="radio_forward_event" 
+    //% block="radio forward event|from source %src=control_event_source_id|with value %value=control_event_value_id" 
+    //% blockExternalInputs=1
+    void forwardEvent(int id, int value) {
+        if (radioEnable() != MICROBIT_OK) return;
+        
+        uBit.radio.event.listen(src, value);
+    }
 }

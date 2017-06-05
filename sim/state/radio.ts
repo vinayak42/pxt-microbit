@@ -201,8 +201,12 @@ namespace pxsim.radio {
         return board().radioState.bus.datagram.lastReceived.time;
     }
 
+    export function forwardEvent(id: number, value: number) {
+        // TODO
+    }
+
     function writePacketToSerial(b: DalBoard, p: PacketBuffer) {
-        switch(p.payload.type) {
+        switch (p.payload.type) {
             case PacketPayloadType.NUMBER:
                 b.writeSerial(`{"t":${p.time},"s":${p.serial},"v":${p.payload.numberData}}\r\n`)
                 break;
