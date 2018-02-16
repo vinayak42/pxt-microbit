@@ -23,7 +23,20 @@
             "kittenbot/pxt-robotbit"
         ],
         "preferredRepos": [
-            "Microsoft/pxt-neopixel"
+            "Microsoft/pxt-neopixel",
+            "sparkfun/pxt-gamer-bit",
+            "sparkfun/pxt-moto-bit",
+            "sparkfun/pxt-weather-bit",
+            "minodekit/pxt-minode",
+            "mbitfun/pxt-katakana",
+            "jdarling/pxt-pca9685",
+            "MUSELAB/pxt-wifi-shield",
+            "kittenbot/pxt-robotbit",
+            "CoderDojoOlney/pxt-olney",
+            "PaulDFoster/pxt-microbit-GY521",
+            "chevyng/pxt-ucl-junkrobot",
+            "srs/pxt-bitbot",
+            "LaboratoryForPlayfulComputation/pxt-blockytalkyBLE"
         ]
     },
     "languages": [
