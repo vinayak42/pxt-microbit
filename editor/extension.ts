@@ -626,7 +626,7 @@ namespace pxt.editor {
                 // Convert to integer division
                 /*
                 <block type="math_js_op">
-                    <mutation op-type="binary"></mutation>
+                    <mutation op-type="infix"></mutation>
                     <field name="OP">idiv</field>
                     <value name="ARG0">
                         <shadow type="math_number"><field name="NUM">0</field></shadow>
@@ -641,7 +641,7 @@ namespace pxt.editor {
                 op.textContent = "idiv";
 
                 const mutation = node.ownerDocument.createElement("mutation");
-                mutation.setAttribute("op-type", "binary");
+                mutation.setAttribute("op-type", "infix");
                 // mutation has to be first or Blockly will drop the second argument
                 node.insertBefore(mutation, node.firstChild);
 
