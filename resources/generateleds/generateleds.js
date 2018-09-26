@@ -258,7 +258,7 @@ Object.keys(icons).forEach(icon => {
     const hexLiteral = data
         .replace(/[ \n`\(\)]/gi, '');
 
-    var svg = `<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200" style="background: #fff;">`;
+    var svg = `<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">`;
     const width = 200;
     const height = 200;
     for (var i = 0; i < 5; i++) {
@@ -267,7 +267,7 @@ Object.keys(icons).forEach(icon => {
             const x = j * (width / 5);
             const y = i * (height / 5);
             svg += `<rect y="0" x="0" width="25" height="25" rx="5" transform="translate(${x},${y})"
-                style="${hexItemVal ? 'fill:#f00; stroke:#ccc; stroke-width:2px;' : 'fill: #eee;'}"/>\n`;
+                style="${hexItemVal ? 'fill:#f00; stroke:#fff; stroke-width:2px;' : 'fill: #eee;'}"/>\n`;
         }
     }
     svg += `</svg>`;
