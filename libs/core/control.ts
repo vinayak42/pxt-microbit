@@ -53,7 +53,9 @@ namespace control {
     //% blockId=control_reset_into_pairing block="reset into pairing mode"
     //% advanced=true
     //% weight=1
+    //% help=control/reset-into-pairing-mode
     export function resetIntoPairingMode() {
         control.raiseEvent(DAL.MICROBIT_ID_PARTIAL_FLASHING, DAL.MICROBIT_RESET);
+        control.reset(); // needed to reset simulator
     }
 }

@@ -12,8 +12,10 @@ control.onEvent(0, 0, () => { });
 control.raiseEvent(0, 0);
 control.eventTimestamp();
 control.eventValue();
+control.resetIntoPairingMode();
 ```
 
 ## See Also
 
-[inBackground](/reference/control/in-background), [reset](/reference/control/reset), [waitMicros](/reference/control/wait-micros), [onEvent](/reference/control/on-event), [raiseEvent](/reference/control/raise-event), [eventTimestamp](/reference/control/event-timestamp), [eventValue](/reference/control/event-value)
+[inBackground](/reference/control/in-background), [reset](/reference/control/reset), [waitMicros](/reference/control/wait-micros), [onEvent](/reference/control/on-event), [raiseEvent](/reference/control/raise-event), [eventTimestamp](/reference/control/event-timestamp), [eventValue](/reference/control/event-value),
+[reset into pairing mode](/reference/control/reset-into-pairing-mode)
