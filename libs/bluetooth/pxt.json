@@ -29,10 +29,19 @@
         },
         "userConfigs": [
             {
-                "description": "(Advanced) Smaller GATT table (0x300).",
+                "description": "(Advanced) Debug output to serial.",
                 "config": {
                     "microbit-dal": {
-                        "gatt_table_size": "0x300"
+                        "debug": 1,
+                        "heap_debug": 1
+                    }
+                }
+            },
+            {
+                "description": "(Advanced) Smaller GATT table (0x400).",
+                "config": {
+                    "microbit-dal": {
+                        "gatt_table_size": "0x400"
                     }
                 }
             },
