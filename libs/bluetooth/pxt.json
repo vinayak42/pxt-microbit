@@ -29,10 +29,19 @@
         },
         "userConfigs": [
             {
-                "description": "(Advanced) Disable Bluetooth Event and Eddystone services.",
+                "description": "(Advanced) Smaller GATT table (0x300).",
+                "config": {
+                    "microbit-dal": {
+                        "gatt_table_size": "0x300"
+                    }
+                }
+            },
+            {
+                "description": "(Advanced) Disable Bluetooth Device Info, Event and Eddystone services.",
                 "config": {
                     "microbit-dal": {
                         "bluetooth": {
+                            "device_info_service": 0,
                             "event_service": 0,
                             "eddystone_url": 0,
                             "eddystone_uid": 0
@@ -41,7 +50,7 @@
                 }
             },
             {
-                "description": "(Advanced) Disable Bluetooth Flashing. You will need to enter pairing mode to flash.",
+                "description": "(Advanced) Disable Bluetooth Partial Flashing.",
                 "config": {
                     "microbit-dal": {
                         "bluetooth": {
