@@ -243,6 +243,7 @@
   "control.inBackground|block": "run in background",
   "control.onEvent|block": "on event|from %src=control_event_source_id|with value %value=control_event_value_id",
   "control.raiseEvent|block": "raise event|from source %src=control_event_source_id|with value %value=control_event_value_id",
+  "control.resetIntoPairingMode|block": "reset into pairing mode",
   "control.reset|block": "reset",
   "control.waitMicros|block": "wait (µs)%micros",
   "control|block": "control",

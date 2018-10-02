@@ -46,4 +46,14 @@ namespace control {
      */
     //% shim=pxtrt::runtimeWarning
     export function runtimeWarning(message: string) { }
+
+    /**
+     * Resets the device and enters pairing mode
+     */
+    //% blockId=control_reset_into_pairing block="reset into pairing mode"
+    //% advanced=true
+    //% weight=1
+    export function resetIntoPairingMode() {
+        control.raiseEvent(DAL.MICROBIT_ID_PARTIAL_FLASHING, DAL.MICROBIT_RESET);
+    }
 }
