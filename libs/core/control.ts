@@ -8,7 +8,7 @@ namespace control {
     /**
      * Returns the value of a C++ runtime constant
      */
-    //% weight=2 weight=19 blockId="control_event_source_id" block="%id" blockGap=8
+    //% weight=19 blockId="control_event_source_id" block="%id" blockGap=8
     //% shim=TD_ID advanced=true
     export function eventSourceId(id: EventBusSource): number {
         return id;
@@ -46,4 +46,12 @@ namespace control {
      */
     //% shim=pxtrt::runtimeWarning
     export function runtimeWarning(message: string) { }
+
+    /**
+     * Resets the device into Bluetooth pairing mode
+     */
+    //% advanced=true weight=1
+    export function resetIntoPairing() {
+        control.raiseEvent(DAL.MICROBIT_ID_PARTIAL_FLASHING, DAL.MICROBIT_RESET);
+    }
 }
