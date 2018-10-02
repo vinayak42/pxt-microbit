@@ -26,7 +26,60 @@
                 "stack_size": 1280,
                 "gatt_table_size": "0x700"
             }
-        }
+        },
+        "userConfigs": [
+            {
+                "description": "(Advanced) Disable DFU service.",
+                "config": {
+                    "microbit-dal": {
+                        "bluetooth": {
+                            "dfu_service": 0
+                        }
+                    }
+                }
+            },
+            {
+                "description": "(Advanced) Disable Event service.",
+                "config": {
+                    "microbit-dal": {
+                        "bluetooth": {
+                            "event_service": 0
+                        }
+                    }
+                }
+            },
+            {
+                "description": "(Advanced) Disable Device Info service.",
+                "config": {
+                    "microbit-dal": {
+                        "bluetooth": {
+                            "device_info_service": 0
+                        }
+                    }
+                }
+            },
+            {
+                "description": "(Advanced) Disable Eddystone beacons.",
+                "config": {
+                    "microbit-dal": {
+                        "bluetooth": {
+                            "eddystone_url": 0,
+                            "eddystone_uid": 0
+                        }
+                    }
+                }
+            },
+            {
+                "description": "(Advanced) Disable Partial Flashing",
+                "config": {
+                    "microbit-dal": {
+                        "bluetooth": {
+                            "partial_flashing": 0
+                        }
+                    }
+                }
+            }
+        ]
     },
     "installedVersion": "vzlhfd"
 }
