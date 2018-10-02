@@ -212,6 +212,7 @@
   "control.raiseEvent|param|src": "ID of the MicroBit Component that generated the event e.g. MICROBIT_ID_BUTTON_A.",
   "control.raiseEvent|param|value": "Component specific code indicating the cause of the event.",
   "control.reset": "Resets the BBC micro:bit.",
+  "control.resetIntoPairing": "Resets the device into Bluetooth pairing mode",
   "control.runtimeWarning": "Display warning in the simulator.",
   "control.waitMicros": "Blocks the current fiber for the given microseconds",
   "control.waitMicros|param|micros": "number of micro-seconds to wait. eg: 4",
