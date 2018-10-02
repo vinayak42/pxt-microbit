@@ -4,6 +4,7 @@
   "bluetooth.onBluetoothConnected|block": "on bluetooth connected",
   "bluetooth.onBluetoothDisconnected|block": "on bluetooth disconnected",
   "bluetooth.onUartDataReceived|block": "bluetooth|on data received %delimiters=serial_delimiter_conv",
+  "bluetooth.resetIntoPairingMode|block": "bluetooth reset into pairing mode",
   "bluetooth.setTransmitPower|block": "bluetooth set transmit power %power",
   "bluetooth.startAccelerometerService|block": "bluetooth accelerometer service",
   "bluetooth.startButtonService|block": "bluetooth button service",
