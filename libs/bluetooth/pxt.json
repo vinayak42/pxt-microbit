@@ -29,40 +29,12 @@
         },
         "userConfigs": [
             {
-                "description": "(Advanced) Disable DFU service.",
+                "description": "(Advanced) Disable Bluetooth Event, Device Info and Eddystone services.",
                 "config": {
                     "microbit-dal": {
                         "bluetooth": {
-                            "dfu_service": 0
-                        }
-                    }
-                }
-            },
-            {
-                "description": "(Advanced) Disable Event service.",
-                "config": {
-                    "microbit-dal": {
-                        "bluetooth": {
-                            "event_service": 0
-                        }
-                    }
-                }
-            },
-            {
-                "description": "(Advanced) Disable Device Info service.",
-                "config": {
-                    "microbit-dal": {
-                        "bluetooth": {
-                            "device_info_service": 0
-                        }
-                    }
-                }
-            },
-            {
-                "description": "(Advanced) Disable Eddystone beacons.",
-                "config": {
-                    "microbit-dal": {
-                        "bluetooth": {
+                            "event_service": 0,
+                            "device_info_service": 0,
                             "eddystone_url": 0,
                             "eddystone_uid": 0
                         }
@@ -70,10 +42,11 @@
                 }
             },
             {
-                "description": "(Advanced) Disable Partial Flashing",
+                "description": "(Advanced) Disable Bluetooth Flashing. You will need to enter pairing mode to flash.",
                 "config": {
                     "microbit-dal": {
                         "bluetooth": {
+                            "dfu_service": 0,
                             "partial_flashing": 0
                         }
                     }
