@@ -38,14 +38,6 @@
                 }
             },
             {
-                "description": "(Advanced) Smaller GATT table (0x400).",
-                "config": {
-                    "microbit-dal": {
-                        "gatt_table_size": "0x400"
-                    }
-                }
-            },
-            {
                 "description": "(Advanced) Disable Bluetooth Device Info, Event and Eddystone services.",
                 "config": {
                     "microbit-dal": {
