@@ -63,4 +63,14 @@ namespace bluetooth {
         buf.setNumber(NumberFormat.Int32BE, 12, instance);
         bluetooth.advertiseUidBuffer(buf, power, connectable);
     }
+
+    
+    /**
+     * Resets the device into Bluetooth pairing mode
+     */
+    //% parts=bluetooth blockGap=8
+    //% advanced=true weight=1
+    export function resetIntoPairingMode() {
+        control.raiseEvent(DAL.MICROBIT_ID_PARTIAL_FLASHING, DAL.MICROBIT_RESET);
+    }
 }

@@ -38,11 +38,10 @@
                 }
             },
             {
-                "description": "(Advanced) Disable Bluetooth Device Info, Event and Eddystone services.",
+                "description": "(Advanced) Disable Bluetooth Event and Eddystone services.",
                 "config": {
                     "microbit-dal": {
                         "bluetooth": {
-                            "device_info_service": 0,
                             "event_service": 0,
                             "eddystone_url": 0,
                             "eddystone_uid": 0

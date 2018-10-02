@@ -46,12 +46,4 @@ namespace control {
      */
     //% shim=pxtrt::runtimeWarning
     export function runtimeWarning(message: string) { }
-
-    /**
-     * Resets the device into Bluetooth pairing mode
-     */
-    //% advanced=true weight=1
-    export function resetIntoPairing() {
-        control.raiseEvent(DAL.MICROBIT_ID_PARTIAL_FLASHING, DAL.MICROBIT_RESET);
-    }
 }
