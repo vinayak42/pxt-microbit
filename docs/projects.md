@@ -34,6 +34,10 @@ Here are some cool projects that you can build with your @boardname@!
   "url":"/projects/science",
   "imageUrl":"/static/mb/projects/timegate.jpg"
 }, {
+  "name": "Bluetooth",
+  "url": "/projects/bluetooth",
+  "imageUrl":"/static/mb/projects/bluetooth.jpg"
+}, {
   "name": "Tools",
   "url": "/projects/tools",
   "imageUrl": "/static/mb/projects/light-level-meter.png"
