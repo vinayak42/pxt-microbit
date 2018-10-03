@@ -7,7 +7,7 @@ Projects and tutorials using Bluetooth
 ```codecard
 [
     {
-        "name": "Bluetooth Guitar",
+        "name": "GarageBand Guitar",
         "url": "/projects/bluetooth-guitar",
         "imageUrl":"/static/mb/projects/bluetooth-guitar.jpg"
     },
