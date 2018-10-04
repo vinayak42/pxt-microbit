@@ -134,6 +134,16 @@
             },
             {
                 "kind": "function",
+                "fullyQualifiedName": "PwmOnlyPin.servoSetPulse",
+                "argumentRoles": [
+                    {
+                        "pinInstantiationIdx": 0,
+                        "partParameter": "name"
+                    }
+                ]
+            },
+            {
+                "kind": "function",
                 "fullyQualifiedName": "servos.Servo.setAngle",
                 "argumentRoles": [
                     {
