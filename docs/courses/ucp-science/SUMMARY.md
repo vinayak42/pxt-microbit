@@ -4,7 +4,7 @@
 
 ## Data Collection
 
-* [Data collection](/courses/ucp-science/data-collection)
+* [Data collection](./data-collection)
     * [Overview](/courses/ucp-science/data-collection/overview)
     * [Setup and procedure](/courses/ucp-science/data-collection/setup-procedure)
     * [Resources](/courses/ucp-science/data-collection/resources)
