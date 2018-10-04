@@ -13,10 +13,12 @@ class PwmOnlyPin {
         return <AnalogPin>this.id;
     }
 
+    //% parts=microservo trackArgs=0
     public servoWrite(value: number): void {
         pins.servoWritePin(this.analogPin(), value);
     }
 
+    //% parts=microservo trackArgs=0
     public servoSetPulse(duration: number): void {
         pins.servoSetPulse(this.analogPin(), duration);
     }
