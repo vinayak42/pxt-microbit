@@ -3,7 +3,6 @@
   "AcceleratorRange.FourG": "The accelerator measures forces up to 4 gravity",
   "AcceleratorRange.OneG": "The accelerator measures forces up to 1 gravity",
   "AcceleratorRange.TwoG": "The accelerator measures forces up to 2 gravity",
-  "AnalogInPin.analogRead": "Read the connector value as analog, that is, as a value comprised between 0 and 1023.",
   "Array": "Add, remove, and replace items in lists.\n\nAdd, remove, and replace items in lists.",
   "Array.every": "Tests whether all elements in the array pass the test implemented by the provided function.",
   "Array.every|param|callbackfn": "A function that accepts up to two arguments. The every method calls the callbackfn function one time for each element in the array.",
