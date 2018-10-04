@@ -1,26 +1,62 @@
 //% noRefCounting fixedInstances
-class PwmOnlyPin {
+abstract class Pin {
     public id: number;
     constructor(id: number) {
         this.id = id;
     }
 
-    public digitalPin(): DigitalPin {
+    protected digitalId(): DigitalPin {
         return <DigitalPin>this.id;
     }
 
-    public analogPin(): AnalogPin {
+    protected analogId(): AnalogPin {
         return <AnalogPin>this.id;
+    }
+}
+
+//% noRefCounting fixedInstances
+class AnalogInPin extends Pin {
+    constructor(id: number) {
+        super(id);
+    }
+
+    public analogRead(): number {
+        return pins.analogReadPin(this.analogId());
+    }
+}
+
+
+//% noRefCounting fixedInstances
+class AnalogOutPin extends AnalogInPin {
+    public id: number;
+    constructor(id: number) {
+        super(id);
+    }
+
+    analogWrite(value: number): void {
+        pins.analogWritePin(this.analogId(), value);
+    }
+}
+
+//% noRefCounting fixedInstances
+class PwmOnlyPin extends AnalogOutPin {
+    constructor(id: number) {
+        super(id);
+    }
+
+    //% parts=microservo trackArgs=0
+    public analogSetPeriod(period: number): void {
+        pins.analogSetPeriod(this.analogId(), period);
     }
 
     //% parts=microservo trackArgs=0
     public servoWrite(value: number): void {
-        pins.servoWritePin(this.analogPin(), value);
+        pins.servoWritePin(this.analogId(), value);
     }
 
     //% parts=microservo trackArgs=0
     public servoSetPulse(duration: number): void {
-        pins.servoSetPulse(this.analogPin(), duration);
+        pins.servoSetPulse(this.analogId(), duration);
     }
 }
 
