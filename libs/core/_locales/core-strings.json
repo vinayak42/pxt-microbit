@@ -143,6 +143,8 @@
   "LedSpriteProperty.Direction|block": "direction",
   "LedSpriteProperty.X|block": "x",
   "LedSpriteProperty.Y|block": "y",
+  "Math.constrain|block": "constrain %value|between %low|and %high",
+  "Math.map|block": "map %value|from low %fromLow|high %fromHigh|to low %toLow|high %toHigh",
   "Math.randomBoolean|block": "pick random true or false",
   "Math.randomRange|block": "pick random %min|to %limit",
   "Math|block": "Math",
@@ -366,6 +368,7 @@
   "{id:category}Music": "Music",
   "{id:category}Number": "Number",
   "{id:category}Pins": "Pins",
+  "{id:category}PwmOnlyPin": "PwmOnlyPin",
   "{id:category}Serial": "Serial",
   "{id:category}String": "String",
   "{id:category}Text": "Text"
